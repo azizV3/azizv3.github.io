@@ -186,5 +186,5 @@ async function send(text) {
 
     setBadge("disconnected");
     setStatus(BACKEND ? "Ready." : "No server configured.");
-    addMessage("agent", "Agent ready. Type a prompt to start.");
+addMessage("agent", "> INITIALIZING EVILMINE (LITE)...\n> core_engine: OK\n> tool_orchestrator: ONLINE\n\nAll agent modules operational.\n Hello User, i'm evilMine. What woukd you like me to answer?");
 })();
