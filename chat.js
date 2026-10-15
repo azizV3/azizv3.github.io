@@ -175,7 +175,7 @@ async function send(text) {
         setBadge("disconnected");
         endTurn(`Couldn't connect (${err.message}). The server may be offline.`);
     }
-}window.send = send;
+}
     
     form.addEventListener("submit", e => { 
     e.preventDefault(); 
