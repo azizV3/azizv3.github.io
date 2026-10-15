@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Aziz Bouajina | Software Engineer & AI Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-sound="brand-sound">Aziz</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active" data-sound="home-sound">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-sound="about-sound">About</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-sound="portfolio-sound">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link" data-sound="contact-sound">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+    <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+    <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+    <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+
+    <section class="hero-section">
+        <video src="Videos/TDBG1.mp4" autoplay muted loop class="hero-video"></video>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <main class="main-container">
+        <section class="content-box">
+            <h1 class="section-title">Software Engineering & AI</h1>
+            <p class="section-subtitle">Computer Science Student & Full-Stack Developer specializing in scalable systems and AI agent orchestration.</p>
+            
+            <div class="code-terminal">
+                <div class="terminal-bar"><span class="terminal-dot"></span></div>
+                <div class="terminal-body">
+                    <pre><code><span class="code-keyword">def</span> <span class="code-func">get_profile</span>():
+    <span class="code-keyword">return</span> {
+        <span class="code-string">"name"</span>: <span class="code-string">"Mohamed Aziz Bouajina"</span>,
+        <span class="code-string">"university"</span>: <span class="code-string">"ISI El Manar"</span>,
+        <span class="code-string">"focus"</span>: [<span class="code-string">"Backend Systems"</span>, <span class="code-string">"AI Orchestration"</span>, <span class="code-string">"Cybersecurity"</span>]
+    }</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-grid">
+            <div class="info-card">
+                <h3>About Me</h3>
+                <p>Explore my academic journey at ISI El Manar and technical background.</p>
+                <a href="about.html" class="card-btn">Read More</a>
+            </div>
+            <div class="info-card">
+                <h3>Portfolio</h3>
+                <p>Check out my hackathon wins, AI agent orchestrators, and web apps.</p>
+                <a href="portfolio.html" class="card-btn">View Projects</a>
+            </div>
+            <div class="info-card">
+                <h3>Contact</h3>
+                <p>Get in touch for collaborations, opportunities, or technical inquiries.</p>
+                <a href="contact.html" class="card-btn">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

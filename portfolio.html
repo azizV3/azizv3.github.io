@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohamed Aziz Bouajina</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #1e1f26;">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-sound="brand-sound">Aziz  | PORTFOLIO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-sound="home-sound">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-sound="about-sound">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active" data-sound="portfolio-sound">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link" data-sound="contact-sound">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container" style="padding-top: 160px;">
+        <section class="content-box">
+            <h1 class="section-title" style="color: #ff0266;">Projects & Systems</h1>
+            <p class="section-subtitle">A selection of hackathon entries, full-stack tools, and AI applications I've engineered.</p>
+        </section>
+
+        <section class="cards-grid">
+            <div class="info-card featured">
+                <div class="featured-info">
+                    <h3>AI Agent Desktop Orchestrator</h3>
+                    <p>A full-stack desktop application built with React, Electron, FastAPI, asyncio, and Ollama supporting dynamic tool-calling and context management.</p>
+                    <ul class="tech-tags">
+                        <li>React</li><li>Electron</li><li>FastAPI</li><li>asyncio</li><li>Ollama</li>
+                    </ul>
+                    <div class="demo-note">Live chat: this talks to the real agent running on my own machine, so it only responds while the server is online.</div>
+                </div>
+
+                <div class="agent-chat" id="agent-chat" data-backend="http://localhost:8000">
+                    <div class="chat-bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="chat-title">agent@orchestrator</span>
+                        <span class="chat-mode">disconnected</span>
+                    </div>
+                    <div class="chat-log" role="log" aria-live="polite" aria-label="Chat with the agent"></div>
+                    <div class="tool-log">
+                        <div class="tool-head">tools used:</div>
+                        <div class="tool-empty">No tools executed yet.</div>
+                    </div>
+                    <div class="chat-status" aria-live="polite"></div>
+                    <form class="chat-form">
+                        <input type="text" placeholder="type here..." aria-label="Message the agent" autocomplete="off">
+                        <button type="submit">Execute</button>
+                    </form>
+                </div>
+            </div>
+            <div class="info-card" style="width: 350px;">
+                <h3>ATS Hackathon Bot</h3>
+                <p>Secured 2nd place in the ATS NextGen Coders Hackathon by developing an autonomous Python bot operating on a real-time REST API with JWT auth.</p>
+            </div>
+            <div class="info-card" style="width: 350px;">
+                <h3>Medical Appointment Platform</h3>
+                <p>Contributed robust PHP/JavaScript backend logic, database modeling, and process structuring for a collaborative healthcare app.</p>
+            </div>
+            <div class="info-card" style="width: 350px;">
+                <h3>Autonomous Multimedia CMS</h3>
+                <p>Engineered a custom content management system featuring a local audio streaming player, task manager, and AJAX polling.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mohamed Aziz Bouajina &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
