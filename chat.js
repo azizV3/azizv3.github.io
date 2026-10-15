@@ -156,8 +156,9 @@ function ensureSocket() {
 
 
 
-    async function send(text) {
+async function send(text) {
         text = text.trim();
+
         if (busy || !text) return;
         if (!BACKEND) {
             setStatus("No server configured (set data-backend on the chat).");
@@ -180,7 +181,7 @@ function ensureSocket() {
             setBadge("disconnected");
             endTurn(`Couldn't connect (${err.message}). The server may be offline.`);
         }
-    }
+    }window.send = send;
     
     form.addEventListener("submit", e => { 
     e.preventDefault(); 
