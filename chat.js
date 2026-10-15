@@ -110,7 +110,7 @@ async function loadBackend() {
         input.focus({ preventScroll: true });
     }
 
-async function makeconv() {
+async function ensureConversation() {
     if (convId) return;
     const res = await fetch(`${BACKEND}/conversations`, {
         method: "POST",
