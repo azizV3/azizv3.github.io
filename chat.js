@@ -156,31 +156,26 @@ function ensureSocket() {
 
 
 async function send(text) {
-        text = text.trim();
+    text = text.trim();
+    if (busy || !text) return;
 
-        if (busy || !text) return;
-        if (!BACKEND) {
-            setStatus("No server configured (set data-backend on the chat).");
-            return;
-        }
-        addMessage("user", text);
-        input.value = "";
-        setBusy(true);
-        turn = { el: addMessage("agent", "", true), text: "" };
-        setStatus("Connecting...");
+    addMessage("user", text);
+    input.value = "";
+    setBusy(true);
+    turn = { el: addMessage("agent", "", true), text: "" };
+    setStatus("Connecting...");
 
-        
-        try {
-            await loadBackend();
-            await ensureConversation();
-            await ensureSocket();
-            socket.send(JSON.stringify({ message: text }));
-        } catch (err) {
-            socket = null;
-            setBadge("disconnected");
-            endTurn(`Couldn't connect (${err.message}). The server may be offline.`);
-        }
-    }window.send = send;
+    try {
+        await loadBackend();
+        await makeconv();
+        await ensureSocket();
+        socket.send(JSON.stringify({ message: text }));
+    } catch (err) {
+        socket = null;
+        setBadge("disconnected");
+        endTurn(`Couldn't connect (${err.message}). The server may be offline.`);
+    }
+}window.send = send;
     
     form.addEventListener("submit", e => { 
     e.preventDefault(); 
