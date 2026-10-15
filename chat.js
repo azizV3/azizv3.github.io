@@ -181,8 +181,12 @@ function ensureSocket() {
             endTurn(`Couldn't connect (${err.message}). The server may be offline.`);
         }
     }
+    
+    form.addEventListener("submit", e => { 
+    e.preventDefault(); 
+    send(input.value); 
+    });
 
-    form.addEventListener("submit", e => { e.preventDefault(); send(input.value); });
     window.addEventListener("pagehide", () => socket?.close());
 
     setBadge("disconnected");
