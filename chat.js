@@ -39,7 +39,6 @@ async function loadBackend() {
     const input = form.querySelector("input");
     const sendBtn = form.querySelector("button");
     const badge = root.querySelector(".chat-mode");
-    const BACKEND = (root.dataset.backend || "").replace(/\/$/, "");
 
     let busy = false;
     let socket = null;
