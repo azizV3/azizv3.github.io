@@ -7,7 +7,7 @@ async function loadBackend() {
     if (BACKEND) return BACKEND;
 
     const configUrl =
-        "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/tunnel.json";
+    "https://raw.githubusercontent.com/azizV3/azizv3.github.io/main/tunnel.json";
 
     const response = await fetch(
         `${configUrl}?t=${Date.now()}`,
