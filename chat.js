@@ -167,7 +167,7 @@ async function send(text) {
 
     try {
         await loadBackend();
-        await makeconv();
+        await ensureConversation();
         await ensureSocket();
         socket.send(JSON.stringify({ message: text }));
     } catch (err) {
