@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="hkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#241805"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#hkGlow)"/>
+  <rect x="15" y="15" width="570" height="370" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <path d="M 10 30 L 10 10 L 30 10" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 590 30 L 590 10 L 570 10" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 10 370 L 10 390 L 30 390" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 590 370 L 590 390 L 570 390" fill="none" stroke="#e30037" stroke-width="3"/>
+
+  <!-- Trophy Emblem & Waveform -->
+  <g transform="translate(300, 180)">
+    <!-- Circuit lines -->
+    <path d="M -200 40 L -80 40 L -40 0 L 40 0 L 80 40 L 200 40" fill="none" stroke="rgba(255,200,50,0.4)" stroke-width="2"/>
+    <circle cx="-80" cy="40" r="4" fill="#e30037"/>
+    <circle cx="80" cy="40" r="4" fill="#e30037"/>
+
+    <!-- Trophy / Badge -->
+    <polygon points="0,-70 50,-40 50,20 0,60 -50,20 -50,-40" fill="#141108" stroke="#ffb703" stroke-width="2.5"/>
+    <text x="0" y="-8" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="28" fill="#ffb703">2ND</text>
+    <text x="0" y="24" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="12" fill="#ffffff" letter-spacing="2">PLACE</text>
+    
+    <text x="0" y="90" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="18" fill="#ffffff">ATS NEXTGEN CODERS</text>
+    <text x="0" y="112" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="12" fill="#e30037">PYTHON // JWT AUTH // REST API BOT</text>
+  </g>
+
+  <text x="35" y="50" font-family="'Share Tech Mono', monospace" font-size="13" fill="#e30037" letter-spacing="2">SYSTEM: 02 // HACKATHON</text>
+  <text x="565" y="50" text-anchor="end" font-family="'Share Tech Mono', monospace" font-size="12" fill="rgba(255,255,255,0.5)">AWARD-WINNER</text>
+</svg>

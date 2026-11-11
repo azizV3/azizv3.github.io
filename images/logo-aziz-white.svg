@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" width="1600" height="180">
+  <defs>
+    <style>
+      .txt-main { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 104px; fill: #ffffff; letter-spacing: 0.12em; text-transform: uppercase; }
+      .txt-sub { font-family: 'Share Tech Mono', monospace; font-size: 26px; fill: #e30037; letter-spacing: 0.45em; text-transform: uppercase; }
+      .bracket { stroke: #e30037; stroke-width: 4; fill: none; }
+      .dec-line { stroke: rgba(255,255,255,0.4); stroke-width: 2; }
+      .dec-dot { fill: #e30037; }
+    </style>
+  </defs>
+  
+  <!-- Corner Tech Brackets -->
+  <path class="bracket" d="M 10 40 L 10 10 L 60 10" />
+  <path class="bracket" d="M 1590 40 L 1590 10 L 1540 10" />
+  <path class="bracket" d="M 10 140 L 10 170 L 60 170" />
+  <path class="bracket" d="M 1590 140 L 1590 170 L 1540 170" />
+
+  <!-- Side accents -->
+  <circle class="dec-dot" cx="24" cy="90" r="5" />
+  <line class="dec-line" x1="40" y1="90" x2="110" y2="90" />
+  <circle class="dec-dot" cx="1576" cy="90" r="5" />
+  <line class="dec-line" x1="1490" y1="90" x2="1560" y2="90" />
+
+  <!-- Main Hero Typography -->
+  <text x="800" y="105" text-anchor="middle" class="txt-main">AZIZ BOUAJINA</text>
+  <text x="800" y="152" text-anchor="middle" class="txt-sub">SOFTWARE ENGINEER &amp; AI DEVELOPER // 2026</text>
+</svg>

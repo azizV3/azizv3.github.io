@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" width="1600" height="180">
+  <defs>
+    <style>
+      .txt-stroke { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 104px; fill: none; stroke: #ffffff; stroke-width: 3; letter-spacing: 0.12em; text-transform: uppercase; }
+      .txt-sub-stroke { font-family: 'Share Tech Mono', monospace; font-size: 26px; fill: none; stroke: #ffffff; stroke-width: 1.5; letter-spacing: 0.45em; text-transform: uppercase; }
+      .wire-bracket { stroke: #ffffff; stroke-width: 3; fill: none; }
+    </style>
+  </defs>
+  
+  <path class="wire-bracket" d="M 10 40 L 10 10 L 60 10" />
+  <path class="wire-bracket" d="M 1590 40 L 1590 10 L 1540 10" />
+  <path class="wire-bracket" d="M 10 140 L 10 170 L 60 170" />
+  <path class="wire-bracket" d="M 1590 140 L 1590 170 L 1540 170" />
+
+  <text x="800" y="105" text-anchor="middle" class="txt-stroke">AZIZ BOUAJINA</text>
+  <text x="800" y="152" text-anchor="middle" class="txt-sub-stroke">SOFTWARE ENGINEER &amp; AI DEVELOPER // 2026</text>
+</svg>

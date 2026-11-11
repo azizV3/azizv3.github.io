@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="orGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a050f"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#orGlow)"/>
+  <rect x="15" y="15" width="570" height="370" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <!-- Corner marks -->
+  <path d="M 10 30 L 10 10 L 30 10" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 590 30 L 590 10 L 570 10" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 10 370 L 10 390 L 30 390" fill="none" stroke="#e30037" stroke-width="3"/>
+  <path d="M 590 370 L 590 390 L 570 390" fill="none" stroke="#e30037" stroke-width="3"/>
+
+  <!-- Agent Node Network -->
+  <g transform="translate(300, 190)">
+    <!-- Interconnecting lines -->
+    <line x1="-160" y1="-50" x2="0" y2="0" stroke="#e30037" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="160" y1="-50" x2="0" y2="0" stroke="#03dac6" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="-120" y1="80" x2="0" y2="0" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <line x1="120" y1="80" x2="0" y2="0" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+
+    <!-- Central LLM Core -->
+    <circle r="46" fill="#0f070c" stroke="#e30037" stroke-width="3"/>
+    <circle r="36" fill="rgba(227,0,55,0.2)"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="16" fill="#ffffff">OLLAMA</text>
+
+    <!-- Node 1: React / Electron Desktop -->
+    <g transform="translate(-160, -50)">
+      <rect x="-45" y="-22" width="90" height="44" rx="4" fill="#080e14" stroke="#03dac6" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="12" fill="#03dac6">ELECTRON</text>
+    </g>
+
+    <!-- Node 2: FastAPI Async -->
+    <g transform="translate(160, -50)">
+      <rect x="-45" y="-22" width="90" height="44" rx="4" fill="#14080a" stroke="#e30037" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="12" fill="#ff4d6d">FASTAPI</text>
+    </g>
+
+    <!-- Node 3: Tool Execution Loop -->
+    <g transform="translate(-120, 80)">
+      <rect x="-50" y="-18" width="100" height="36" rx="4" fill="#080a0c" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="11" fill="#ffffff">TOOL_CALLS</text>
+    </g>
+
+    <!-- Node 4: WebSockets Stream -->
+    <g transform="translate(120, 80)">
+      <rect x="-50" y="-18" width="100" height="36" rx="4" fill="#080a0c" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="11" fill="#ffffff">STREAM_CTX</text>
+    </g>
+  </g>
+
+  <!-- HUD Text -->
+  <text x="35" y="50" font-family="'Share Tech Mono', monospace" font-size="13" fill="#e30037" letter-spacing="2">SYSTEM: 01 // ORCHESTRATOR</text>
+  <text x="565" y="50" text-anchor="end" font-family="'Share Tech Mono', monospace" font-size="12" fill="rgba(255,255,255,0.5)">AI AGENT RUNTIME</text>
+</svg>

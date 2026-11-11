@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" class="js is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Mohamed Aziz Bouajina | Software Engineer & AI Developer</title>
+  <meta name="description" content="Mohamed Aziz Bouajina — L3 Computer Science student at ISI El Manar (GPA 15.5/20). Full-Stack Developer & AI Engineer specializing in distributed backend systems, autonomous AI agents, and cybersecurity. Seeking a PFE internship.">
+  <meta name="theme-color" content="#030305">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mohamed Aziz Bouajina Portfolio">
+  <meta property="og:title" content="Mohamed Aziz Bouajina | Software Engineer & AI Developer">
+  <meta property="og:description" content="L3 Computer Science student at ISI El Manar. AI agent orchestration, distributed backend systems, and cybersecurity. Seeking a PFE internship.">
+  <meta property="og:image" content="images/profile-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="images/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/chakrapetch-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/chakrapetch-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/sharetechmono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <script>document.documentElement.className += ' js is-loading';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- Audio Asset Hooks (Original Portfolio Sounds) -->
+  <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+  <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+  <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+  <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+  <audio id="career-sound" src="sounds/career-sound.wav" preload="auto"></audio>
+
+  <!-- Global SVG Symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.67-.75 1.67-1.67s-.75-1.67-1.67-1.67c-.92 0-1.67.75-1.67 1.67s.75 1.67 1.67 1.67m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 5h18v14H3z"></path><path fill="none" stroke="currentColor" stroke-width="1.8" d="m3 7 9 6 9-6"></path></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.59 3.68a1 1 0 0 1-.24 1.02l-2.23 2.09z"></path></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3Z"></path></symbol>
+  </svg>
+
+  <!-- Cyber Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__emblem" viewBox="0 0 120 120" fill="none">
+        <g class="loader__ring">
+          <circle cx="60" cy="60" r="54" stroke="rgba(255,255,255,.22)" stroke-width="1"></circle>
+          <circle cx="60" cy="60" r="54" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="40 300"></circle>
+          <circle cx="60" cy="6" r="2.5" fill="#e30037"></circle>
+        </g>
+        <g class="loader__ring2">
+          <circle cx="60" cy="60" r="44" stroke="rgba(255,255,255,.5)" stroke-width="1" stroke-dasharray="2 6"></circle>
+        </g>
+        <g class="loader__hex">
+          <path d="M60 30 86 45v30L60 90 34 75V45Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path>
+          <path d="M60 40 77 50v20L60 80 43 70V50Z" stroke="#e30037" stroke-width="1.5" stroke-linejoin="round"></path>
+        </g>
+        <circle class="loader__core" cx="60" cy="60" r="5" fill="#e30037"></circle>
+      </svg>
+      <div class="loader__meta">
+        <span id="loaderStatus">INITIALIZING</span>
+        <span><b id="loaderPct">000</b>%</span>
+      </div>
+      <div class="loader__bar"><i></i></div>
+      <p class="loader__code">MAB-001 // MOHAMED AZIZ BOUAJINA</p>
+    </div>
+  </div>
+
+  <!-- Background Canvas & Circuit Layers -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__photo"></div>
+    <div class="bg__hex"></div>
+    <canvas class="bg__fx" id="bgfx"></canvas>
+  </div>
+
+  <!-- Side Rails (Desktop) -->
+  <div class="rail rail--l" aria-hidden="true"><span>MAB-001 // MOHAMED AZIZ BOUAJINA // SOFTWARE &amp; AI</span></div>
+  <div class="rail rail--r" aria-hidden="true"><div class="rail__bar"><i id="progress"></i></div></div>
+
+  <!-- Main Fixed Header -->
+  <header class="hd" id="hd">
+    <a class="hd__logo" href="#top" aria-label="Mohamed Aziz Bouajina - Back to top" data-sound="home-sound">
+      <img src="images/logo-aziz.svg" alt="Aziz" width="130" height="36">
+    </a>
+
+    <nav class="hd__nav" id="nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" data-sound="about-sound"><small>01</small>ABOUT</a></li>
+        <li><a href="#projects" data-sound="portfolio-sound"><small>02</small>PROJECTS</a></li>
+        <li><a href="#orchestrator" data-sound="career-sound"><small>03</small>ORCHESTRATOR</a></li>
+        <li><a href="#skills" data-sound="about-sound"><small>04</small>SKILLS</a></li>
+        <li><a href="#contact" data-sound="contact-sound"><small>05</small>CONTACT</a></li>
+      </ul>
+      <p class="hd__navfoot" aria-hidden="true">MAB-001 // SOFTWARE &amp; AI DEVELOPER</p>
+    </nav>
+
+    <div class="hd__actions">
+      <button class="hd__sound-toggle" id="soundToggle" type="button" aria-label="Toggle Sound Effects">
+        <i></i><span>AUDIO [OFF]</span>
+      </button>
+
+      <button class="hd__menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION (Key Visual) -->
+    <section class="kv" id="top" aria-label="Mohamed Aziz Bouajina Hero">
+      <div class="kv__img">
+        <video class="kv__video" src="videos/TDBG1.mp4" autoplay muted loop playsinline></video>
+        <canvas class="kv__snow" id="kvSnow" aria-hidden="true"></canvas>
+      </div>
+      <div class="kv__shade"></div>
+
+      <div class="kv__frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <div class="kv__band" aria-hidden="true">
+        <span class="kv__stripes"></span>
+        <span class="kv__vtext">MAB-2026 // MOHAMED AZIZ BOUAJINA</span>
+      </div>
+
+      <div class="kv__body">
+        <p class="kv__tagline">SYSTEM // AI AGENT ORCHESTRATION &amp; DISTRIBUTED BACKEND</p>
+
+        <h1 class="kv__title">
+          <span class="kv__echo" aria-hidden="true"></span>
+          <img src="images/logo-aziz-white.svg" width="1600" height="180" alt="Mohamed Aziz Bouajina">
+        </h1>
+
+        <ul class="kv__meta">
+          <li><small>DEGREE</small>L3 Computer Science — ISI El Manar (GPA L1 &amp; L2: 15.5/20)</li>
+          <li><small>GOAL</small><span style="color:#03dac6;">PFE INTERNSHIP (Software Engineering &amp; AI Solutions)</span></li>
+          <li><small>AWARD</small>2nd Place — ATS NextGen Coders Hackathon</li>
+          <li><small>CYBERSECURITY</small>SecuriNets (CTF &amp; Audits) &amp; Geeks &amp; Freeways</li>
+        </ul>
+
+        <!-- Interactive Python Profile Terminal -->
+        <div class="kv__terminal">
+          <div class="kv__terminal-bar">
+            <div class="chat-bar-left">
+              <div class="chat-dots">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <span class="chat-title">profile.py</span>
+            </div>
+            <span style="color:var(--cyan); letter-spacing:.2em;">◈ PYTHON 3.12 · ASYNCIO · FASTAPI</span>
+          </div>
+          <div class="kv__terminal-body">
+            <pre><code><span class="code-kw">def</span> <span class="code-fn">get_operator_dossier</span>():
+    <span class="code-kw">return</span> {
+        <span class="code-key">"name"</span>:        <span class="code-str">"Mohamed Aziz Bouajina"</span>,
+        <span class="code-key">"institution"</span>: <span class="code-str">"ISI El Manar, Ariana — L3 Informatique"</span>,
+        <span class="code-key">"grades"</span>:      <span class="code-str">"GPA L1/L2: 15.5/20  |  Baccalaureate: 17.34/20"</span>,
+        <span class="code-key">"seeking"</span>:     <span class="code-str">"PFE Internship — Backend · AI · Security"</span>,
+        <span class="code-key">"awards"</span>:      [<span class="code-str">"2nd @ Hackathon NextGen Coders ATS"</span>, <span class="code-str">"HackerRank Certified"</span>],
+        <span class="code-key">"github"</span>:      <span class="code-str">"github.com/azizV3"</span>,
+        <span class="code-key">"contact"</span>:     {<span class="code-key">"phone"</span>: <span class="code-str">"+216 29021277"</span>, <span class="code-key">"email"</span>: <span class="code-str">"mohamedaziz.bouajina@gmail.com"</span>}
+    }<span class="caret"></span></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <a class="kv__scroll" href="#about" data-sound="about-sound"><span>SCROLL</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <!-- RUNNING TICKER MARQUEE -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>MOHAMED AZIZ BOUAJINA</span><i>/////</i>
+        <span>COMPUTER SCIENCE STUDENT (L3)</span><i>/////</i>
+        <span>ISI EL MANAR (GPA 15.5/20)</span><i>/////</i>
+        <span>SEEKING PFE INTERNSHIP</span><i>/////</i>
+        <span>FASTAPI • REACT • ELECTRON • PYTHON • OLLAMA</span><i>/////</i>
+        <span>2ND PLACE — NEXTGEN CODERS HACKATHON (ATS)</span><i>/////</i>
+        <span>SECURINETS &amp; GEEKS &amp; FREEWAYS</span><i>/////</i>
+      </div>
+    </div>
+
+    <!-- 01 ABOUT ME SECTION -->
+    <section class="sec" id="about" aria-labelledby="h-about">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>01</span><i></i><span>CURRICULUM VITAE &amp; BACKGROUND</span></p>
+          <h2 class="sec-head__title glitch" id="h-about" data-text="ABOUT ME">ABOUT ME</h2>
+        </div>
+
+        <div class="release">
+          <figure class="jacket rv">
+            <button class="jacket__btn" type="button" aria-haspopup="dialog" aria-controls="lightbox" aria-label="Enlarge Operator Dossier">
+              <span class="jacket__tilt">
+                <span class="jacket__img">
+                  <img src="images/profile-card.svg" width="1200" height="1200" loading="lazy" decoding="async" alt="Mohamed Aziz Bouajina Operator Dossier">
+                  <span class="jacket__glare" aria-hidden="true"></span>
+                </span>
+              </span>
+            </button>
+            <span class="crop crop--tl" aria-hidden="true"></span>
+            <span class="crop crop--tr" aria-hidden="true"></span>
+            <span class="crop crop--bl" aria-hidden="true"></span>
+            <span class="crop crop--br" aria-hidden="true"></span>
+            <figcaption>
+              <span class="jacket__hint" aria-hidden="true">
+                <i></i>
+                <span class="jacket__hint-pc">CLICK TO ENLARGE</span>
+                <span class="jacket__hint-sp">TAP TO ENLARGE</span>
+              </span>
+              <span>ISI EL MANAR // L3</span>
+            </figcaption>
+          </figure>
+
+          <div class="release__info">
+            <dl class="spec rv-stagger">
+              <div class="spec__row rv">
+                <dt>Identity</dt>
+                <dd class="spec__title">Mohamed Aziz Bouajina</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Education</dt>
+                <dd>Bachelor of Computer Science (3rd Year — L3)<br><strong>Institut Supérieur d'Informatique (ISI) El Manar, Ariana</strong> (2024 – Present)</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Academics</dt>
+                <dd><strong>Overall GPA L1 &amp; L2: 15.5/20</strong> | <strong>Baccalaureate Average: 17.34/20</strong></dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Goal</dt>
+                <dd style="color:var(--cyan);">Apply my software engineering, backend, and AI integration skills to contribute to an innovative company through a <strong>PFE internship</strong>.</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Clubs &amp; Roles</dt>
+                <dd>
+                  • <strong>SecuriNets</strong>: CTF (Capture The Flag) competitions and event graphic design.<br>
+                  • <strong>Geeks &amp; Freeways</strong>: Event co-organization, e-sport tournament logistics (20 participants), technical workshops (Linux, IoT, Problem Solving, IBM, ISI in motion).
+                </dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Languages</dt>
+                <dd>French (Bilingual/Fluent), English (Professional), Arabic (Native)</dd>
+              </div>
+            </dl>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cosmic Singularity Horizon Banner (bgi.png Seamless Integration) -->
+    <div class="horizon-strip rv" style="position:relative; width:100%; height:180px; overflow:hidden; border-top:1px solid var(--line-s); border-bottom:1px solid var(--line-s); background:#000;" aria-hidden="true">
+      <div style="position:absolute; inset:0; background: url('images/bgi.png') center center / cover no-repeat; opacity:0.8; filter: contrast(130%) brightness(90%);"></div>
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse 70% 80% at 50% 50%, transparent 20%, rgba(3,3,5,0.7) 65%, #030305 100%), linear-gradient(90deg, #030305 0%, transparent 25%, transparent 75%, #030305 100%);"></div>
+      <div class="wrap" style="position:relative; height:100%; display:flex; align-items:center; justify-content:space-between; gap:20px;">
+        <div>
+          <span style="font:11px/1 var(--f-mono); letter-spacing:.3em; color:var(--cyan); display:block;">[GRAVITATIONAL LENSING // EVENT HORIZON]</span>
+          <span style="font:700 clamp(16px, 2.5vw, 22px)/1.4 var(--f-disp); letter-spacing:.08em; color:var(--fg); display:block; margin-top:6px;">AUTONOMOUS AI RUNTIME &amp; FULLSTACK ARCHITECTURE</span>
+        </div>
+        <div style="text-align:right; font:11px/1.6 var(--f-mono); color:var(--dim); flex-shrink:0;">
+          <span>COSMIC SINGULARITY COORDINATES</span><br>
+          <span style="color:var(--red);">LAT: 36.832 // LON: 10.147 (ISI EL MANAR)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 PROJECTS & SYSTEMS SECTION -->
+    <section class="sec" id="projects" aria-labelledby="h-projects">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>02</span><i></i><span>ACADEMIC &amp; PERSONAL PROJECTS</span></p>
+          <h2 class="sec-head__title glitch" id="h-projects" data-text="PROJECTS">PROJECTS</h2>
+        </div>
+
+        <div class="panel rv">
+          <div class="panel__in">
+            <ol class="tracks rv-stagger">
+              
+              <!-- Project 01: Featured AI Agent Desktop Orchestrator -->
+              <li class="track rv">
+                <span class="track__no">01</span>
+                <div class="track__main">
+                  <span class="track__artist">SUMMER 2026 // FULLSTACK &amp; SECURITY ANALYSIS FRAMEWORK</span>
+                  <span class="track__title">Local AI Orchestrator &amp; Security Analysis Framework</span>
+                  <div class="track__tags">
+                    <span class="track__tag">React</span>
+                    <span class="track__tag">Electron</span>
+                    <span class="track__tag">FastAPI</span>
+                    <span class="track__tag">asyncio</span>
+                    <span class="track__tag">Ollama 7b/14b</span>
+                    <span class="track__tag">Docker</span>
+                    <span class="track__tag">Nginx</span>
+                    <span class="track__tag">Async PostgreSQL</span>
+                  </div>
+                  <p class="track__note">
+                    • Built a desktop orchestrator switching between local and cloud LLMs, optimized for 7b/14b models, tested across 5 models.<br>
+                    • Designed an autonomous execution engine: file manipulation, runtime tool creation/testing, directory scanning for contextual prompts.<br>
+                    • Implemented cybersecurity pipelines: data flow mapping, PoC generation, automated patches, sandboxing.<br>
+                    • Created specialized agents (desktop keyboard/mouse vision, Minecraft API bot + macros). Deployed in production via Docker, Nginx, CI/CD, and async PostgreSQL.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Project 02: ATS Hackathon Bot -->
+              <li class="track rv">
+                <span class="track__no">02</span>
+                <div class="track__main">
+                  <span class="track__artist">COMPETITION // 2ND PLACE NEXTGEN CODERS HACKATHON (ATS)</span>
+                  <span class="track__title">Autonomous API Puzzle-Solver Bot (ATS Hackathon)</span>
+                  <div class="track__tags">
+                    <span class="track__tag">Python</span>
+                    <span class="track__tag">REST API</span>
+                    <span class="track__tag">JWT Auth</span>
+                    <span class="track__tag">Real-Time</span>
+                    <span class="track__tag">Throttling</span>
+                    <span class="track__tag">Hot Reload</span>
+                    <span class="track__tag">Telemetry</span>
+                  </div>
+                  <p class="track__note">Ranked 2nd at the NextGen Coders Hackathon (ATS): an autonomous Python bot solving real-time API puzzles via REST with adaptive throttling, hot code reloading, and continuous telemetry.</p>
+                </div>
+              </li>
+
+              <!-- Project 03: Medical Appointment Platform -->
+              <li class="track rv">
+                <span class="track__no">03</span>
+                <div class="track__main">
+                  <span class="track__artist">2025 // LEADERSHIP &amp; HEALTHCARE ARCHITECTURE</span>
+                  <span class="track__title">AI-Powered Medical Teleconsultation Web Platform</span>
+                  <div class="track__tags">
+                    <span class="track__tag">PHP</span>
+                    <span class="track__tag">JavaScript</span>
+                    <span class="track__tag">BPMN</span>
+                    <span class="track__tag">SQL</span>
+                    <span class="track__tag">AI Integration</span>
+                    <span class="track__tag">Unit Testing</span>
+                  </div>
+                  <p class="track__note">
+                    • Led a team of 3 (Front-end, Design, Deployment) over 3 months.<br>
+                    • Backend &amp; Modeling: Full PHP/JS development and formal BPMN flow design.<br>
+                    • Data &amp; AI: SQL database structuring and AI integration for patient triage.<br>
+                    • Quality &amp; Testing: Systematic implementation of a full unit test suite.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Project 04: Autonomous Multimedia CMS -->
+              <li class="track rv">
+                <span class="track__no">04</span>
+                <div class="track__main">
+                  <span class="track__artist">2026 // FULLSTACK DYNAMIC WEB APPLICATION</span>
+                  <span class="track__title">Dynamic Web Application &amp; Multimedia CMS</span>
+                  <div class="track__tags">
+                    <span class="track__tag">PHP</span>
+                    <span class="track__tag">MySQL</span>
+                    <span class="track__tag">Audio Streaming</span>
+                    <span class="track__tag">AJAX Polling Chat</span>
+                    <span class="track__tag">PDO Security</span>
+                    <span class="track__tag">LAMP</span>
+                  </div>
+                  <p class="track__note">
+                    • Full-Stack Development: Dynamic CMS with secure authentication and an audio streaming engine for educational resources.<br>
+                    • Interactive real-time chat module built on AJAX polling (PHP/MySQL).<br>
+                    • Security &amp; Deployment: Strict SQL/XSS protection (PDO prepared statements) and production deployment on a remote LAMP environment.
+                  </p>
+                </div>
+              </li>
+
+            </ol>
+            <p class="tracks-note">※ The desktop orchestrator communicates directly with the local server below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 LIVE ORCHESTRATOR TERMINAL (Interactive Agent - Real Backend Protocol) -->
+    <section class="sec" id="orchestrator" aria-labelledby="h-orchestrator">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>03</span><i></i><span>LIVE FASTAPI CONSOLE</span></p>
+          <h2 class="sec-head__title glitch" id="h-orchestrator" data-text="ORCHESTRATOR">ORCHESTRATOR</h2>
+        </div>
+
+        <div class="xfd rv">
+          <div class="xfd__bar" aria-hidden="true">
+            <span><i class="xfd__rec"></i>LOCAL AGENT // FASTAPI BACKEND (PORT 8000)</span>
+            <span>DIRECT PROTOCOL</span>
+          </div>
+
+          <div class="xfd__body">
+            <div class="xfd__screen">
+              
+              <!-- Real Agent Chat Component (Direct Backend Communication) -->
+              <div class="agent-chat" id="agent-chat" data-backend="http://localhost:8000">
+                <div class="chat-bar">
+                  <div class="chat-bar-left">
+                    <div class="chat-dots">
+                      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                    <span class="chat-title">agent@orchestrator</span>
+                  </div>
+                  <span class="chat-mode">STANDBY</span>
+                </div>
+
+                <!-- System Briefing & Live Demo Notice -->
+                <div class="chat-briefing">
+                  <p><span class="chat-briefing-tag">SYSTEM ARCHITECTURE:</span> A full-stack desktop application built with React, Electron, FastAPI, asyncio, and Ollama supporting dynamic tool-calling and context management.</p>
+                  <p style="margin-top:6px;"><span class="chat-briefing-warn">LIVE DEMO NOTE:</span> This talks to a stripped-down and highly modified version of my agent running on my own machine, so it only responds while the server is online.</p>
+                </div>
+
+                <!-- Preset Prompt Chips -->
+                <div class="chat-presets">
+                  <button class="preset-btn" type="button" data-prompt="Introduce yourself and describe your background at ISI">[?] ISI Background</button>
+                  <button class="preset-btn" type="button" data-prompt="What are your FastAPI and local AI skills?">[?] FastAPI &amp; AI</button>
+                  <button class="preset-btn" type="button" data-prompt="What projects have you built?">[?] Projects Built</button>
+                  <button class="preset-btn" type="button" data-prompt="Explain how your autonomous tool engine works">[?] Tool Engine</button>
+                </div>
+
+                <div class="chat-log" role="log" aria-live="polite" aria-label="Agent conversation log"></div>
+
+                <div class="tool-log">
+                  <div class="tool-head">TOOLS EXECUTED AT RUNTIME:</div>
+                  <div class="tool-empty">No tools executed yet. Awaiting command...</div>
+                </div>
+
+                <div class="chat-status" aria-live="polite">Waiting for connection to the FastAPI backend (http://localhost:8000).</div>
+
+                <form class="chat-form">
+                  <input type="text" placeholder="Send a command to the local agent (FastAPI + Ollama at http://localhost:8000)..." aria-label="Agent command" autocomplete="off">
+                  <button type="submit">Execute</button>
+                </form>
+              </div>
+
+            </div>
+
+            <span class="xfd__c xfd__c--tl" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--tr" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--bl" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--br" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 CREDENTIALS & TECH STACK (With Radar Chart) -->
+    <section class="sec" id="skills" aria-labelledby="h-skills">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>04</span><i></i><span>TECHNICAL SKILLS &amp; ENGAGEMENTS</span></p>
+          <h2 class="sec-head__title glitch" id="h-skills" data-text="CREDENTIALS">CREDENTIALS</h2>
+        </div>
+
+        <div class="skills-layout">
+          <!-- SKILLSET RADAR CHART -->
+          <div class="radar-card rv">
+            <div class="radar-card-head">
+              <span><b>RADAR V1.0</b> // ENGINEERING SKILLS</span>
+              <span>SCALE: 0 – 100%</span>
+            </div>
+
+            <svg class="radar-svg" viewBox="0 0 600 500" aria-label="Skills Radar Chart">
+              <defs>
+                <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#03dac6" stop-opacity="0.25"/>
+                  <stop offset="70%" stop-color="#03dac6" stop-opacity="0.08"/>
+                  <stop offset="100%" stop-color="#03dac6" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Concentric Hexagon Grid Levels (20%, 40%, 60%, 80%, 100%) -->
+              <polygon class="radar-grid" points="300,216 329.4,233 329.4,267 300,284 270.6,267 270.6,233" />
+              <polygon class="radar-grid" points="300,182 358.9,216 358.9,284 300,318 241.1,284 241.1,216" />
+              <polygon class="radar-grid is-major" points="300,148 388.3,199 388.3,301 300,352 211.7,301 211.7,199" />
+              <polygon class="radar-grid" points="300,114 417.8,182 417.8,318 300,386 182.2,318 182.2,182" />
+              <polygon class="radar-grid is-major" points="300,80 447.2,165 447.2,335 300,420 152.8,335 152.8,165" />
+
+              <!-- Axes from Center (300, 250) to Vertex Ends -->
+              <line class="radar-axis" x1="300" y1="250" x2="300" y2="80" />
+              <line class="radar-axis" x1="300" y1="250" x2="447.2" y2="165" />
+              <line class="radar-axis" x1="300" y1="250" x2="447.2" y2="335" />
+              <line class="radar-axis" x1="300" y1="250" x2="300" y2="420" />
+              <line class="radar-axis" x1="300" y1="250" x2="152.8" y2="335" />
+              <line class="radar-axis" x1="300" y1="250" x2="152.8" y2="165" />
+
+              <!-- Skillset Polygon Shape -->
+              <polygon class="radar-shape" points="300,88.5 435.4,171.8 429.6,324.8 300,396.2 179.3,319.7 182.2,182.0" />
+
+              <!-- Data Points (Interactive Dots) -->
+              <circle class="radar-point" cx="300" cy="88.5" r="4.5"><title>Backend &amp; FastAPI: 95%</title></circle>
+              <circle class="radar-point" cx="435.4" cy="171.8" r="4.5"><title>AI &amp; Agents (Ollama/FastAPI): 92%</title></circle>
+              <circle class="radar-point" cx="429.6" cy="324.8" r="4.5"><title>Bases de Données &amp; SQL: 88%</title></circle>
+              <circle class="radar-point" cx="300" cy="396.2" r="4.5"><title>Cyber &amp; Sandboxing: 86%</title></circle>
+              <circle class="radar-point" cx="179.3" cy="319.7" r="4.5"><title>DevOps &amp; CI/CD: 82%</title></circle>
+              <circle class="radar-point" cx="182.2" cy="182.0" r="4.5"><title>React &amp; Electron: 80%</title></circle>
+
+              <!-- Axis Labels with Percentage Badges -->
+              <text class="radar-label" x="300" y="58" text-anchor="middle">Backend &amp; FastAPI <tspan class="pct">95%</tspan></text>
+              <text class="radar-label" x="462" y="165" text-anchor="start">AI &amp; Agents <tspan class="pct">92%</tspan></text>
+              <text class="radar-label" x="462" y="340" text-anchor="start">Databases &amp; SQL <tspan class="pct">88%</tspan></text>
+              <text class="radar-label" x="300" y="445" text-anchor="middle">Cyber &amp; Sandboxing <tspan class="pct">86%</tspan></text>
+              <text class="radar-label" x="138" y="340" text-anchor="end">DevOps &amp; CI/CD <tspan class="pct">82%</tspan></text>
+              <text class="radar-label" x="138" y="165" text-anchor="end">React &amp; Electron <tspan class="pct">80%</tspan></text>
+            </svg>
+
+            <div class="radar-legend">
+              <span><i style="background:var(--cyan)"></i> Balanced Software Engineering &amp; AI Profile</span>
+              <span><i style="background:var(--red)"></i> Unit Testing &amp; CTF SecuriNets</span>
+            </div>
+          </div>
+
+          <!-- Structured Credentials List -->
+          <dl class="credit rv-stagger">
+            <div class="credit__row rv">
+              <dt>Backend Architecture</dt>
+              <dd>FastAPI, REST APIs, WebSockets, asyncio, JWT, Microservices</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Languages</dt>
+              <dd>Python, Java, PHP, JavaScript (ES6+), C/C++</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Artificial Intelligence</dt>
+              <dd>LLMs, AI Agents, Local Inference (Ollama 7b/14b across 5 models), Dynamic Tool Engine, Sandboxing</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Databases &amp; Web</dt>
+              <dd>PostgreSQL (async), MySQL, React, HTML5, CSS3, Electron</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>DevOps &amp; Tools</dt>
+              <dd>Docker, Nginx, CI/CD, Linux, Git, GitHub (azizV3), Odoo, LAMP</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Security &amp; Reliability</dt>
+              <dd>Execution sandboxing, Systematic unit testing, PDO protection (SQL/XSS), CTF SecuriNets</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Certifications</dt>
+              <dd>HackerRank Software Engineer Certified</dd>
+            </div>
+            <div class="credit__row rv">
+              <dt>Involvement</dt>
+              <dd>SecuriNets (CTF/Design), Geeks &amp; Freeways (E-sport logistics, Tech workshops)</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 CONTACT CHANNELS (GitHub, LinkedIn, Email, Phone - No Dispatch Form) -->
+    <section class="sec sec--last" id="contact" aria-labelledby="h-contact">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>05</span><i></i><span>TRANSMISSION &amp; DIRECT CONTACT</span></p>
+          <h2 class="sec-head__title glitch" id="h-contact" data-text="CONTACT">CONTACT</h2>
+        </div>
+
+        <div class="contact-hub rv">
+          <div class="contact-channels">
+
+            <!-- 1. Direct Email Button (with mailto and instant clipboard copy) -->
+            <a class="contact-card" href="mailto:mohamedaziz.bouajina@gmail.com" data-copy="mohamedaziz.bouajina@gmail.com" data-sound="contact-sound" title="Click to email or copy address">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">Professional Email (Click to Copy)</span>
+                <span class="contact-card__val">mohamedaziz.bouajina@gmail.com</span>
+              </div>
+              <span class="contact-card__action">SEND ↗</span>
+            </a>
+
+            <!-- 2. Phone Button (from CV) -->
+            <a class="contact-card" href="tel:+21629021277" data-copy="+216 29 021 277" data-sound="career-sound" title="Click to call or copy phone number">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">Direct Phone (Tunisia)</span>
+                <span class="contact-card__val">+216 29 021 277</span>
+              </div>
+              <span class="contact-card__action">CALL ↗</span>
+            </a>
+
+            <!-- 3. LinkedIn Profile Button -->
+            <a class="contact-card" href="https://www.linkedin.com/in/mohamed-aziz-bouajina-14237b39b" target="_blank" rel="noopener" data-sound="career-sound">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-in"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">LinkedIn Profile</span>
+                <span class="contact-card__val">Mohamed Aziz Bouajina</span>
+              </div>
+              <span class="contact-card__action">CONNECT ↗</span>
+            </a>
+
+            <!-- 4. GitHub Repository Button -->
+            <a class="contact-card" href="https://github.com/azizV3" target="_blank" rel="noopener" data-sound="portfolio-sound">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-gh"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">GitHub Repository</span>
+                <span class="contact-card__val">github.com/azizV3</span>
+              </div>
+              <span class="contact-card__action">EXPLORE ↗</span>
+            </a>
+
+          </div>
+
+          <div class="contact-badge-strip">
+            <span>📍 Location: <b>Ariana / Tunis, Tunisia</b></span>
+            <span>🎓 Institution: <b>ISI El Manar (L3 Computer Science)</b></span>
+            <span>⚡ Availability: <b>Immediate PFE Internship</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal for Enlargeable Dossier Card -->
+  <dialog class="lb" id="lightbox" aria-label="Operator Dossier Enlarge View">
+    <div class="lb__inner">
+      <img class="lb__img" data-src="images/profile-card.svg" width="1200" height="1200" alt="Mohamed Aziz Bouajina Dossier">
+      <p class="lb__cap" aria-hidden="true">MAB-001 // OPERATOR DOSSIER // ISI EL MANAR</p>
+      <button class="lb__close" type="button" aria-label="Close lightbox"><span></span><span></span></button>
+    </div>
+  </dialog>
+
+  <!-- Cyber Footer with Perspective Floor Grid -->
+  <footer class="ft">
+    <div class="ft__floor" aria-hidden="true"></div>
+    <div class="wrap ft__in">
+      <img class="ft__logo" src="images/logo-aziz-white.svg" width="320" height="40" alt="Mohamed Aziz Bouajina" loading="lazy">
+      <p class="ft__circle">Software Engineer &amp; AI Developer // ISI El Manar</p>
+
+      <a class="ft__top" href="#top" data-sound="home-sound">PAGE TOP<i aria-hidden="true"></i></a>
+      <p class="ft__copy"><small>&copy; 2026 Mohamed Aziz Bouajina // ISI El Manar</small></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

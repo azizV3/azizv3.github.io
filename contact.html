@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="js is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact | Mohamed Aziz Bouajina</title>
+  <meta name="description" content="Direct contact for Mohamed Aziz Bouajina — Email, Phone (+216 29021277), GitHub (azizV3) and LinkedIn. Seeking a PFE internship.">
+  <meta name="theme-color" content="#030305">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <style>
+    .fx-rain {
+      position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.35;
+    }
+  </style>
+  <script>document.documentElement.className += ' js is-loading';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+  <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+  <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+  <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+  <audio id="career-sound" src="sounds/career-sound.wav" preload="auto"></audio>
+
+  <!-- Global SVG Symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.67-.75 1.67-1.67s-.75-1.67-1.67-1.67c-.92 0-1.67.75-1.67 1.67s.75 1.67 1.67 1.67m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 5h18v14H3z"></path><path fill="none" stroke="currentColor" stroke-width="1.8" d="m3 7 9 6 9-6"></path></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.59 3.68a1 1 0 0 1-.24 1.02l-2.23 2.09z"></path></symbol>
+  </svg>
+
+  <!-- Matrix Digital Rain Canvas -->
+  <canvas class="fx-rain" id="matrixRain"></canvas>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__meta">
+        <span id="loaderStatus">INITIALIZING</span>
+        <span><b id="loaderPct">000</b>%</span>
+      </div>
+      <div class="loader__bar"><i></i></div>
+      <p class="loader__code">MAB-001 // CONTACT TERMINAL</p>
+    </div>
+  </div>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__photo"></div>
+    <div class="bg__hex"></div>
+    <canvas class="bg__fx" id="bgfx"></canvas>
+  </div>
+
+  <div class="rail rail--l" aria-hidden="true"><span>MAB-001 // DIRECT TRANSMISSION</span></div>
+  <div class="rail rail--r" aria-hidden="true"><div class="rail__bar"><i id="progress"></i></div></div>
+
+  <header class="hd" id="hd">
+    <a class="hd__logo" href="index.html" aria-label="Home" data-sound="home-sound">
+      <img src="images/logo-aziz.svg" alt="Aziz" width="130" height="36">
+    </a>
+
+    <nav class="hd__nav" id="nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" data-sound="home-sound"><small>00</small>HOME</a></li>
+        <li><a href="about.html" data-sound="about-sound"><small>01</small>ABOUT</a></li>
+        <li><a href="portfolio.html" data-sound="portfolio-sound"><small>02</small>PORTFOLIO</a></li>
+        <li><a href="contact.html" class="is-active" data-sound="contact-sound"><small>03</small>CONTACT</a></li>
+      </ul>
+      <p class="hd__navfoot" aria-hidden="true">MAB-001 // CONTACT</p>
+    </nav>
+
+    <div class="hd__actions">
+      <button class="hd__sound-toggle" id="soundToggle" type="button" aria-label="Toggle Sound">
+        <i></i><span>AUDIO [OFF]</span>
+      </button>
+      <button class="hd__menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="sec sec--last" style="padding-top: calc(var(--hd) + 40px);">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>01</span><i></i><span>DIRECT TRANSMISSION</span></p>
+          <h1 class="sec-head__title glitch" data-text="CONTACT TERMINAL">CONTACT TERMINAL</h1>
+        </div>
+
+        <div class="contact-hub rv">
+          <div class="contact-channels">
+
+            <!-- 1. Email Card (Opens mailto + copies to clipboard) -->
+            <a class="contact-card" href="mailto:mohamedaziz.bouajina@gmail.com" data-copy="mohamedaziz.bouajina@gmail.com" data-sound="contact-sound" title="Click to email or copy address">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">Professional Email (Click to Copy)</span>
+                <span class="contact-card__val">mohamedaziz.bouajina@gmail.com</span>
+              </div>
+              <span class="contact-card__action">SEND ↗</span>
+            </a>
+
+            <!-- 2. Phone Card -->
+            <a class="contact-card" href="tel:+21629021277" data-copy="+216 29 021 277" data-sound="career-sound" title="Click to call or copy phone number">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">Direct Phone (Tunisia)</span>
+                <span class="contact-card__val">+216 29 021 277</span>
+              </div>
+              <span class="contact-card__action">CALL ↗</span>
+            </a>
+
+            <!-- 3. LinkedIn Card -->
+            <a class="contact-card" href="https://www.linkedin.com/in/mohamed-aziz-bouajina-14237b39b" target="_blank" rel="noopener" data-sound="career-sound">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-in"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">LinkedIn Profile</span>
+                <span class="contact-card__val">Mohamed Aziz Bouajina</span>
+              </div>
+              <span class="contact-card__action">CONNECT ↗</span>
+            </a>
+
+            <!-- 4. GitHub Card -->
+            <a class="contact-card" href="https://github.com/azizV3" target="_blank" rel="noopener" data-sound="portfolio-sound">
+              <svg class="contact-card__icon" aria-hidden="true"><use href="#i-gh"></use></svg>
+              <div class="contact-card__content">
+                <span class="contact-card__label">GitHub Repository</span>
+                <span class="contact-card__val">github.com/azizV3</span>
+              </div>
+              <span class="contact-card__action">EXPLORE ↗</span>
+            </a>
+
+          </div>
+
+          <div class="contact-badge-strip">
+            <span>📍 Location: <b>Ariana / Tunis, Tunisia</b></span>
+            <span>🎓 Institution: <b>ISI El Manar (L3 Computer Science)</b></span>
+            <span>⚡ Availability: <b>Immediate PFE Internship</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="ft__floor" aria-hidden="true"></div>
+    <div class="wrap ft__in">
+      <img class="ft__logo" src="images/logo-aziz-white.svg" width="280" height="35" alt="Aziz">
+      <p class="ft__copy"><small>&copy; 2026 Mohamed Aziz Bouajina // ISI El Manar</small></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* Matrix rain background adapted from user's original script */
+    (function() {
+      var canvas = document.getElementById('matrixRain');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      var chars = "01{}[]<>/;=+*#$%ABCDEF".split("");
+      var size = 16;
+      var cols, drops;
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        cols = Math.ceil(canvas.width / size);
+        drops = Array.from({ length: cols }, () => Math.random() * -50);
+      }
+      resize();
+      window.addEventListener("resize", resize);
+      var last = 0;
+      function rain(t) {
+        requestAnimationFrame(rain);
+        if (document.hidden || t - last < 55) return;
+        last = t;
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.fillStyle = "rgba(0,0,0,0.12)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.globalCompositeOperation = "source-over";
+        ctx.font = size + "px 'Share Tech Mono', monospace";
+        drops.forEach(function(y, i) {
+          ctx.fillStyle = Math.random() > 0.97 ? "#d8ffd8" : "#03dac6";
+          ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * size, y * size);
+          drops[i] = y * size > canvas.height && Math.random() > 0.975 ? 0 : y + 1;
+        });
+      }
+      rain(0);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="js is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portfolio | Mohamed Aziz Bouajina</title>
+  <meta name="description" content="Academic and personal projects by Mohamed Aziz Bouajina — Local AI Orchestrator, ATS Hackathon Bot, Multimedia CMS, and Medical Platform.">
+  <meta name="theme-color" content="#030305">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <script>document.documentElement.className += ' js is-loading';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+  <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+  <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+  <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+  <audio id="career-sound" src="sounds/career-sound.wav" preload="auto"></audio>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__meta">
+        <span id="loaderStatus">INITIALIZING</span>
+        <span><b id="loaderPct">000</b>%</span>
+      </div>
+      <div class="loader__bar"><i></i></div>
+      <p class="loader__code">MAB-001 // PORTFOLIO &amp; SYSTEMS</p>
+    </div>
+  </div>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__photo"></div>
+    <div class="bg__hex"></div>
+    <canvas class="bg__fx" id="bgfx"></canvas>
+  </div>
+
+  <div class="rail rail--l" aria-hidden="true"><span>MAB-001 // SYSTEMS &amp; LIVE AGENT</span></div>
+  <div class="rail rail--r" aria-hidden="true"><div class="rail__bar"><i id="progress"></i></div></div>
+
+  <header class="hd" id="hd">
+    <a class="hd__logo" href="index.html" aria-label="Home" data-sound="home-sound">
+      <img src="images/logo-aziz.svg" alt="Aziz" width="130" height="36">
+    </a>
+
+    <nav class="hd__nav" id="nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" data-sound="home-sound"><small>00</small>HOME</a></li>
+        <li><a href="about.html" data-sound="about-sound"><small>01</small>ABOUT</a></li>
+        <li><a href="portfolio.html" class="is-active" data-sound="portfolio-sound"><small>02</small>PORTFOLIO</a></li>
+        <li><a href="contact.html" data-sound="contact-sound"><small>03</small>CONTACT</a></li>
+      </ul>
+      <p class="hd__navfoot" aria-hidden="true">MAB-001 // PORTFOLIO</p>
+    </nav>
+
+    <div class="hd__actions">
+      <button class="hd__sound-toggle" id="soundToggle" type="button" aria-label="Toggle Sound">
+        <i></i><span>AUDIO [OFF]</span>
+      </button>
+      <button class="hd__menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Systems Section -->
+    <section class="sec" style="padding-top: calc(var(--hd) + 40px);">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>01</span><i></i><span>ACADEMIC &amp; PERSONAL PROJECTS</span></p>
+          <h1 class="sec-head__title glitch" data-text="SYSTEMS &amp; PROJECTS">SYSTEMS &amp; PROJECTS</h1>
+        </div>
+
+        <div class="panel rv">
+          <div class="panel__in">
+            <ol class="tracks rv-stagger">
+              <li class="track rv">
+                <span class="track__no">01</span>
+                <div class="track__main">
+                  <span class="track__artist">SUMMER 2026 // FULLSTACK &amp; SECURITY ANALYSIS FRAMEWORK</span>
+                  <span class="track__title">Local AI Orchestrator &amp; Security Analysis Framework</span>
+                  <div class="track__tags">
+                    <span class="track__tag">React</span><span class="track__tag">Electron</span><span class="track__tag">FastAPI</span><span class="track__tag">asyncio</span><span class="track__tag">Ollama 7b/14b</span><span class="track__tag">Docker</span><span class="track__tag">Async PostgreSQL</span>
+                  </div>
+                  <p class="track__note">
+                    • Desktop orchestrator switching between local and cloud LLMs, optimized for 7b/14b models, tested across 5 models.<br>
+                    • Autonomous execution engine: file manipulation, runtime tool creation/testing, directory scanning for contextual prompts.<br>
+                    • Cybersecurity pipelines: data flow mapping, PoC generation, automated patches, sandboxing.<br>
+                    • Specialized agents (desktop keyboard/mouse vision, Minecraft API bot + macros). Deployed in production via Docker/Nginx/CI/CD.
+                  </p>
+                </div>
+              </li>
+
+              <li class="track rv">
+                <span class="track__no">02</span>
+                <div class="track__main">
+                  <span class="track__artist">COMPETITION // 2ND PLACE NEXTGEN CODERS HACKATHON (ATS)</span>
+                  <span class="track__title">Autonomous API Puzzle-Solver Bot (ATS Hackathon)</span>
+                  <div class="track__tags">
+                    <span class="track__tag">Python</span><span class="track__tag">REST API</span><span class="track__tag">JWT Auth</span><span class="track__tag">Throttling</span><span class="track__tag">Hot Reload</span><span class="track__tag">Telemetry</span>
+                  </div>
+                  <p class="track__note">Ranked 2nd at the NextGen Coders Hackathon (ATS): autonomous Python bot solving real-time API puzzles with adaptive throttling, hot reload, and continuous telemetry.</p>
+                </div>
+              </li>
+
+              <li class="track rv">
+                <span class="track__no">03</span>
+                <div class="track__main">
+                  <span class="track__artist">2025 // LEADERSHIP &amp; HEALTHCARE ARCHITECTURE</span>
+                  <span class="track__title">AI-Powered Medical Teleconsultation Web Platform</span>
+                  <div class="track__tags">
+                    <span class="track__tag">PHP</span><span class="track__tag">JavaScript</span><span class="track__tag">BPMN</span><span class="track__tag">SQL</span><span class="track__tag">AI Integration</span><span class="track__tag">Unit Testing</span>
+                  </div>
+                  <p class="track__note">
+                    • Led a team of 3 (Front-end, Design, Deployment) over 3 months.<br>
+                    • Full PHP/JS development and formal BPMN flow design.<br>
+                    • SQL database structuring and smart AI integration for patient triage.<br>
+                    • Systematic validation through a full unit test suite.
+                  </p>
+                </div>
+              </li>
+
+              <li class="track rv">
+                <span class="track__no">04</span>
+                <div class="track__main">
+                  <span class="track__artist">2026 // FULLSTACK DYNAMIC WEB APPLICATION</span>
+                  <span class="track__title">Dynamic Web Application &amp; Multimedia CMS</span>
+                  <div class="track__tags">
+                    <span class="track__tag">PHP</span><span class="track__tag">MySQL</span><span class="track__tag">Audio Streaming</span><span class="track__tag">AJAX Polling Chat</span><span class="track__tag">PDO Security</span><span class="track__tag">LAMP</span>
+                  </div>
+                  <p class="track__note">
+                    • Dynamic CMS with secure authentication and an audio streaming engine for educational resources.<br>
+                    • Real-time interactive chat module via AJAX polling (PHP/MySQL).<br>
+                    • SQL/XSS protection (PDO) and production deployment on a remote LAMP environment.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Agent Orchestrator Screen (Direct Backend Protocol) -->
+    <section class="sec sec--last" id="orchestrator">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>02</span><i></i><span>LIVE FASTAPI CONSOLE</span></p>
+          <h2 class="sec-head__title glitch" data-text="AGENT ORCHESTRATOR">AGENT ORCHESTRATOR</h2>
+        </div>
+
+        <div class="xfd rv">
+          <div class="xfd__bar" aria-hidden="true">
+            <span><i class="xfd__rec"></i>LOCAL AGENT // FASTAPI BACKEND (PORT 8000)</span>
+            <span>DIRECT PROTOCOL</span>
+          </div>
+
+          <div class="xfd__body">
+            <!-- Orchestrator Architecture & Server Status Briefing -->
+            <div class="chat-briefing">
+              <p><span class="chat-briefing-tag">[ARCHITECTURE]</span> A full-stack desktop application built with React, Electron, FastAPI, asyncio, and Ollama supporting dynamic tool-calling and context management.</p>
+              <p style="margin-top:6px;"><span class="chat-briefing-warn">[LIVE DEMO]</span> This talks to a stripped-down and highly modified version of my agent running on my own machine, so it only responds while the server is online.</p>
+            </div>
+
+            <div class="xfd__screen">
+              <div class="agent-chat" id="agent-chat" data-backend="http://localhost:8000">
+                <div class="chat-bar">
+                  <div class="chat-bar-left">
+                    <div class="chat-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    <span class="chat-title">agent@orchestrator</span>
+                  </div>
+                  <span class="chat-mode">STANDBY</span>
+                </div>
+
+                <div class="chat-presets">
+                  <button class="preset-btn" type="button" data-prompt="Introduce yourself and describe your background at ISI">[?] ISI Background</button>
+                  <button class="preset-btn" type="button" data-prompt="What are your FastAPI and local AI skills?">[?] FastAPI &amp; AI</button>
+                  <button class="preset-btn" type="button" data-prompt="What projects have you built?">[?] Projects Built</button>
+                  <button class="preset-btn" type="button" data-prompt="Explain how your autonomous tool engine works">[?] Tool Engine</button>
+                </div>
+
+                <div class="chat-log" role="log" aria-live="polite"></div>
+
+                <div class="tool-log">
+                  <div class="tool-head">TOOLS EXECUTED AT RUNTIME:</div>
+                  <div class="tool-empty">No tools executed yet. Awaiting command...</div>
+                </div>
+
+                <div class="chat-status" aria-live="polite">Waiting for connection to the FastAPI backend.</div>
+
+                <form class="chat-form">
+                  <input type="text" placeholder="Send a command to the local agent (http://localhost:8000)..." aria-label="Agent command" autocomplete="off">
+                  <button type="submit">Execute</button>
+                </form>
+              </div>
+            </div>
+
+            <span class="xfd__c xfd__c--tl" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--tr" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--bl" aria-hidden="true"></span>
+            <span class="xfd__c xfd__c--br" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__floor" aria-hidden="true"></div>
+    <div class="wrap ft__in">
+      <img class="ft__logo" src="images/logo-aziz-white.svg" width="280" height="35" alt="Aziz">
+      <p class="ft__copy"><small>&copy; 2026 Mohamed Aziz Bouajina // ISI El Manar</small></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#240710" />
+      <stop offset="60%" stop-color="#07090e" />
+      <stop offset="100%" stop-color="#020305" />
+    </radialGradient>
+    <pattern id="hexGrid" width="40" height="69.282" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 40 11.547 L 40 34.641 L 20 46.188 L 0 34.641 L 0 11.547 Z M 20 46.188 L 20 69.282" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <pattern id="dotGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.2" fill="rgba(227,0,55,0.2)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="1200" fill="url(#bgGlow)"/>
+  <rect width="1200" height="1200" fill="url(#hexGrid)"/>
+  <rect width="1200" height="1200" fill="url(#dotGrid)"/>
+
+  <!-- Outer Sci-Fi Border Frame -->
+  <rect x="50" y="50" width="1100" height="1100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="1060" fill="none" stroke="rgba(227,0,55,0.3)" stroke-width="1" stroke-dasharray="8 12"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 30 110 L 30 30 L 110 30" fill="none" stroke="#e30037" stroke-width="6"/>
+  <path d="M 1170 110 L 1170 30 L 1090 30" fill="none" stroke="#e30037" stroke-width="6"/>
+  <path d="M 30 1090 L 30 1170 L 110 1170" fill="none" stroke="#e30037" stroke-width="6"/>
+  <path d="M 1170 1090 L 1170 1170 L 1090 1170" fill="none" stroke="#e30037" stroke-width="6"/>
+
+  <!-- Top Header Bar -->
+  <rect x="90" y="90" width="1020" height="70" fill="rgba(227,0,55,0.12)" stroke="rgba(227,0,55,0.4)" stroke-width="1.5"/>
+  <text x="120" y="134" font-family="'Share Tech Mono', monospace" font-size="22" fill="#e30037" letter-spacing="4">OPERATOR DOSSIER // CURRICULUM VITAE</text>
+  <text x="1080" y="134" text-anchor="end" font-family="'Share Tech Mono', monospace" font-size="20" fill="#03dac6" letter-spacing="3">STAGE PFE: AVAILABLE</text>
+
+  <!-- Central Holographic HUD Graphic -->
+  <g transform="translate(600, 520)">
+    <circle r="300" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <circle r="260" fill="none" stroke="rgba(227,0,55,0.25)" stroke-width="1.5" stroke-dasharray="14 10"/>
+    <circle r="220" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <circle r="180" fill="none" stroke="#e30037" stroke-width="2" stroke-dasharray="40 180"/>
+    <circle r="140" fill="rgba(227,0,55,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+    <line x1="-330" y1="0" x2="330" y2="0" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <line x1="0" y1="-330" x2="0" y2="330" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+
+    <!-- Center Shield -->
+    <polygon points="0,-90 77.9,-45 77.9,45 0,90 -77.9,45 -77.9,-45" fill="rgba(0,0,0,0.75)" stroke="#e30037" stroke-width="3"/>
+    <polygon points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35" fill="rgba(227,0,55,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+
+    <text x="0" y="22" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="64" fill="#ffffff" letter-spacing="4">MAB</text>
+
+    <circle cx="0" cy="-260" r="5" fill="#e30037"/>
+    <circle cx="260" cy="0" r="5" fill="#e30037"/>
+    <circle cx="0" cy="260" r="5" fill="#e30037"/>
+    <circle cx="-260" cy="0" r="5" fill="#e30037"/>
+  </g>
+
+  <!-- Left Side Data Blocks -->
+  <g transform="translate(100, 195)">
+    <text x="0" y="24" font-family="'Share Tech Mono', monospace" font-size="15" fill="#e30037" letter-spacing="2">OPERATOR NAME</text>
+    <text x="0" y="58" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="34" fill="#ffffff">MOHAMED AZIZ BOUAJINA</text>
+
+    <text x="0" y="105" font-family="'Share Tech Mono', monospace" font-size="15" fill="#e30037" letter-spacing="2">ACADEMIC BASE</text>
+    <text x="0" y="136" font-family="'Chakra Petch', sans-serif" font-weight="600" font-size="22" fill="#03dac6">ISI EL MANAR // L3 INFORMATIQUE</text>
+
+    <text x="0" y="180" font-family="'Share Tech Mono', monospace" font-size="15" fill="#e30037" letter-spacing="2">ACADEMIC HONORS</text>
+    <text x="0" y="210" font-family="'Share Tech Mono', monospace" font-size="18" fill="#ffffff">MOYENNE L1 &amp; L2: 15.5/20</text>
+    <text x="0" y="238" font-family="'Share Tech Mono', monospace" font-size="18" fill="#ffffff">MOYENNE BAC: 17.34/20</text>
+  </g>
+
+  <!-- Right Side Telemetry -->
+  <g transform="translate(800, 195)">
+    <rect width="300" height="175" fill="rgba(6,9,14,0.85)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <path d="M 0 0 L 22 0 L 0 22 Z" fill="#e30037"/>
+    <text x="25" y="28" font-family="'Share Tech Mono', monospace" font-size="14" fill="#e30037" letter-spacing="2">COMPETENCIES</text>
+    <text x="25" y="60" font-family="'Share Tech Mono', monospace" font-size="15" fill="#ffffff">ATS HACKATHON: 2ND PLACE</text>
+    <text x="25" y="88" font-family="'Share Tech Mono', monospace" font-size="15" fill="#03dac6">SECURINETS: CTF &amp; VULN</text>
+    <text x="25" y="116" font-family="'Share Tech Mono', monospace" font-size="15" fill="#ffffff">GEEKS &amp; FREEWAYS: ESPORTS/IOT</text>
+    <text x="25" y="144" font-family="'Share Tech Mono', monospace" font-size="15" fill="#ffb703">HACKERRANK CERTIFIED</text>
+  </g>
+
+  <!-- Bottom Technical Deck -->
+  <g transform="translate(100, 910)">
+    <rect width="1000" height="200" fill="rgba(6,8,12,0.92)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    <path d="M 0 0 L 30 0 L 0 30 Z" fill="#e30037"/>
+    <path d="M 1000 200 L 970 200 L 1000 170 Z" fill="#e30037"/>
+
+    <!-- Barcode -->
+    <g transform="translate(35, 45)">
+      <rect x="0" y="0" width="4" height="65" fill="#ffffff"/>
+      <rect x="8" y="0" width="2" height="65" fill="#ffffff"/>
+      <rect x="14" y="0" width="6" height="65" fill="#ffffff"/>
+      <rect x="24" y="0" width="2" height="65" fill="#ffffff"/>
+      <rect x="30" y="0" width="8" height="65" fill="#ffffff"/>
+      <rect x="42" y="0" width="3" height="65" fill="#ffffff"/>
+      <rect x="48" y="0" width="5" height="65" fill="#ffffff"/>
+      <rect x="58" y="0" width="2" height="65" fill="#ffffff"/>
+      <rect x="64" y="0" width="7" height="65" fill="#ffffff"/>
+      <rect x="76" y="0" width="4" height="65" fill="#ffffff"/>
+      <rect x="84" y="0" width="2" height="65" fill="#ffffff"/>
+      <rect x="90" y="0" width="6" height="65" fill="#ffffff"/>
+      <text x="45" y="92" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="13" fill="rgba(255,255,255,0.6)" letter-spacing="2">MAB-001</text>
+    </g>
+
+    <!-- Specs details -->
+    <g transform="translate(180, 40)">
+      <text x="0" y="20" font-family="'Share Tech Mono', monospace" font-size="14" fill="#e30037" letter-spacing="2">STACK ARCHITECTURE</text>
+      <text x="0" y="50" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="19" fill="#ffffff">FASTAPI • REACT • ELECTRON • PYTHON • OLLAMA • ASYNCIO</text>
+      <text x="0" y="80" font-family="'Share Tech Mono', monospace" font-size="14" fill="#03dac6">DOCKER // NGINX // CI/CD // POSTGRESQL // LINUX // JWT</text>
+      <text x="0" y="108" font-family="'Share Tech Mono', monospace" font-size="13" fill="rgba(255,255,255,0.5)">LANGUAGES: FRANÇAIS, ANGLAIS, ARABE | TEL: +216 29021277</text>
+    </g>
+
+    <g transform="translate(790, 45)">
+      <rect x="0" y="0" width="175" height="100" fill="rgba(227,0,55,0.15)" stroke="#e30037" stroke-width="1.5"/>
+      <text x="87" y="38" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="13" fill="#ffffff" letter-spacing="3">STATUS</text>
+      <text x="87" y="68" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="20" fill="#03dac6">STAGE PFE</text>
+      <text x="87" y="88" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="11" fill="#ffffff">DISPONIBLE</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <style>
+      .nav-title { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 30px; fill: #ffffff; letter-spacing: 0.15em; }
+      .nav-sub { font-family: 'Share Tech Mono', monospace; font-size: 11px; fill: #e30037; letter-spacing: 0.25em; }
+      .nav-hex { stroke: #e30037; stroke-width: 2; fill: rgba(227, 0, 55, 0.15); }
+      .nav-core { fill: #ffffff; }
+    </style>
+  </defs>
+  <!-- Cyber Hex Emblem -->
+  <polygon class="nav-hex" points="26,10 44,20 44,40 26,50 8,40 8,20" />
+  <circle class="nav-core" cx="26" cy="30" r="4" />
+  <line x1="26" y1="16" x2="26" y2="44" stroke="#e30037" stroke-width="1.5" />
+  
+  <!-- Text -->
+  <text x="60" y="32" class="nav-title">AZIZ</text>
+  <text x="60" y="47" class="nav-sub">SYS // AI.DEV</text>
+</svg>

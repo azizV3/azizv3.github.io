@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="js is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About | Mohamed Aziz Bouajina</title>
+  <meta name="description" content="Academic background, technical skills, and club involvement of Mohamed Aziz Bouajina at ISI El Manar.">
+  <meta name="theme-color" content="#030305">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <script>document.documentElement.className += ' js is-loading';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+  <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+  <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+  <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+  <audio id="career-sound" src="sounds/career-sound.wav" preload="auto"></audio>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.67-.75 1.67-1.67s-.75-1.67-1.67-1.67c-.92 0-1.67.75-1.67 1.67s.75 1.67 1.67 1.67m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 5h18v14H3z"></path><path fill="none" stroke="currentColor" stroke-width="1.8" d="m3 7 9 6 9-6"></path></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.59 3.68a1 1 0 0 1-.24 1.02l-2.23 2.09z"></path></symbol>
+  </svg>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__meta">
+        <span id="loaderStatus">INITIALIZING</span>
+        <span><b id="loaderPct">000</b>%</span>
+      </div>
+      <div class="loader__bar"><i></i></div>
+      <p class="loader__code">MAB-001 // ABOUT</p>
+    </div>
+  </div>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__photo"></div>
+    <div class="bg__hex"></div>
+    <canvas class="bg__fx" id="bgfx"></canvas>
+  </div>
+
+  <div class="rail rail--l" aria-hidden="true"><span>MAB-001 // MOHAMED AZIZ BOUAJINA // ABOUT</span></div>
+  <div class="rail rail--r" aria-hidden="true"><div class="rail__bar"><i id="progress"></i></div></div>
+
+  <header class="hd" id="hd">
+    <a class="hd__logo" href="index.html" aria-label="Home" data-sound="home-sound">
+      <img src="images/logo-aziz.svg" alt="Aziz" width="130" height="36">
+    </a>
+
+    <nav class="hd__nav" id="nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" data-sound="home-sound"><small>00</small>HOME</a></li>
+        <li><a href="about.html" class="is-active" data-sound="about-sound"><small>01</small>ABOUT</a></li>
+        <li><a href="portfolio.html" data-sound="portfolio-sound"><small>02</small>PORTFOLIO</a></li>
+        <li><a href="contact.html" data-sound="contact-sound"><small>03</small>CONTACT</a></li>
+      </ul>
+      <p class="hd__navfoot" aria-hidden="true">MAB-001 // ABOUT DOSSIER</p>
+    </nav>
+
+    <div class="hd__actions">
+      <button class="hd__sound-toggle" id="soundToggle" type="button" aria-label="Toggle Sound">
+        <i></i><span>AUDIO [OFF]</span>
+      </button>
+      <button class="hd__menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Cosmic Black Hole Hero Header (bgi.png Seamless Blend) -->
+    <div class="about-hero rv" style="position:relative; width:100%; min-height:280px; overflow:hidden; border-bottom:1px solid var(--line-s); margin-top:var(--hd);">
+      <div style="position:absolute; inset:0; background: url('images/bgi.png') center 40% / cover no-repeat; filter: contrast(125%) brightness(90%);"></div>
+      <div style="position:absolute; inset:0; background: radial-gradient(circle at 50% 50%, rgba(3,3,5,0.15) 0%, rgba(3,3,5,0.75) 60%, #030305 100%), linear-gradient(180deg, rgba(3,3,5,0.4) 0%, transparent 40%, rgba(3,3,5,0.8) 80%, #030305 100%);"></div>
+      <div class="wrap" style="position:relative; min-height:280px; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:32px;">
+        <span style="font:11px/1 var(--f-mono); letter-spacing:.3em; color:var(--cyan); display:inline-flex; align-items:center; gap:8px;"><i style="display:inline-block; width:6px; height:6px; background:var(--cyan); border-radius:50%;"></i>SINGULARITY HORIZON // MAB-001 OPERATOR</span>
+        <h1 class="glitch" data-text="ABOUT AZIZ" style="font:700 clamp(36px, 6vw, 64px)/1.1 var(--f-disp); margin-top:10px; letter-spacing:.05em;">ABOUT AZIZ</h1>
+      </div>
+      <span class="crop crop--tl" style="left:20px; top:20px;" aria-hidden="true"></span>
+      <span class="crop crop--tr" style="right:20px; top:20px;" aria-hidden="true"></span>
+      <span class="crop crop--bl" style="left:20px; bottom:20px;" aria-hidden="true"></span>
+      <span class="crop crop--br" style="right:20px; bottom:20px;" aria-hidden="true"></span>
+    </div>
+
+    <section class="sec" style="padding-top: 48px;">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="sec-head__idx"><span>01</span><i></i><span>ENGINEERING DOSSIER &amp; BACKGROUND</span></p>
+          <h2 class="sec-head__title glitch" data-text="CURRICULUM VITAE">CURRICULUM VITAE</h2>
+        </div>
+
+        <div class="release">
+          <figure class="jacket rv">
+            <button class="jacket__btn" type="button" aria-haspopup="dialog" aria-controls="lightbox" aria-label="Enlarge Dossier">
+              <span class="jacket__tilt">
+                <span class="jacket__img">
+                  <img src="images/profile-card.svg" width="1200" height="1200" alt="Mohamed Aziz Bouajina Dossier">
+                  <span class="jacket__glare" aria-hidden="true"></span>
+                </span>
+              </span>
+            </button>
+            <span class="crop crop--tl" aria-hidden="true"></span>
+            <span class="crop crop--tr" aria-hidden="true"></span>
+            <span class="crop crop--bl" aria-hidden="true"></span>
+            <span class="crop crop--br" aria-hidden="true"></span>
+            <figcaption>
+              <span class="jacket__hint" aria-hidden="true"><i></i>CLICK TO ENLARGE</span>
+              <span>ISI EL MANAR // L3 INFO</span>
+            </figcaption>
+          </figure>
+
+          <div class="release__info">
+            <dl class="spec rv-stagger">
+              <div class="spec__row rv">
+                <dt>Identity</dt>
+                <dd class="spec__title">Mohamed Aziz Bouajina</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Education</dt>
+                <dd>Bachelor of Computer Science (3rd Year — L3)<br><strong>Institut Supérieur d'Informatique (ISI) El Manar, Ariana</strong></dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Grades</dt>
+                <dd><strong>GPA L1 &amp; L2: 15.5/20</strong> | <strong>Baccalaureate Average: 17.34/20</strong></dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Strengths</dt>
+                <dd>Teamwork, web &amp; mobile development, IoT, Networking &amp; Security, BPMN &amp; SQL modeling.</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Clubs</dt>
+                <dd>
+                  • <strong>SecuriNets</strong>: CTF (Capture The Flag) competitions &amp; event graphic design.<br>
+                  • <strong>Geeks &amp; Freeways</strong>: Event co-organization, e-sport tournament (20 participants), workshops (Linux, IoT, Problem Solving, IBM, ISI in motion).
+                </dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Languages</dt>
+                <dd>French (Bilingual/Fluent), English (Professional), Arabic (Native)</dd>
+              </div>
+              <div class="spec__row rv">
+                <dt>Seeking</dt>
+                <dd style="color:var(--cyan);"><strong>PFE Internship</strong> in application development, software engineering, and AI solution integration.</dd>
+              </div>
+            </dl>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lb" id="lightbox">
+    <div class="lb__inner">
+      <img class="lb__img" data-src="images/profile-card.svg" width="1200" height="1200" alt="Mohamed Aziz Bouajina Dossier">
+      <p class="lb__cap">MAB-001 // OPERATOR DOSSIER</p>
+      <button class="lb__close" type="button" aria-label="Close"><span></span><span></span></button>
+    </div>
+  </dialog>
+
+  <footer class="ft">
+    <div class="ft__floor" aria-hidden="true"></div>
+    <div class="wrap ft__in">
+      <img class="ft__logo" src="images/logo-aziz-white.svg" width="280" height="35" alt="Aziz">
+      <p class="ft__copy"><small>&copy; 2026 Mohamed Aziz Bouajina // ISI El Manar</small></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
