@@ -9,7 +9,7 @@ window.PORTFOLIO_CONFIG = {
     degree: "Licence en Sciences de l'Informatique (3ème année - L3)",
     university: "Institut Supérieur d'Informatique (ISI) El Manar, Ariana",
     academicGrades: {
-      l1_l2: "15.5 / 20",
+      l1_l2: "1. / 20",
       bac: "17.34 / 20"
     },
     location: "Ariana / Tunis, Tunisia",
@@ -43,10 +43,10 @@ window.PORTFOLIO_CONFIG = {
   /* ④ Audio Settings */
   audio: {
     enabledByDefault: false,
-    volume: 0.35,
+    volume: 0.3,
   },
 
-  /* ⑤ Share Text */
+  /*  Share Text */
   shareText: "Mohamed Aziz Bouajina — Software Engineer & AI Developer (ISI El Manar)\n{url} #SoftwareEngineering #FastAPI #AIAgents #Python",
 
 };
